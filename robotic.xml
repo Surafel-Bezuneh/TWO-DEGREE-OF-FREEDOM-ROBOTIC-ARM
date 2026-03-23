@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/06/23||15:55:48" using="Simscape Multibody Link Version 7.4" from="SolidWorks 28.5.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="" uid="" version="112">
+<AssemblyFile name="" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="kol-1" uid="kol-1" entityUid="kol*:*Varsayilan">
+<Transform>
+<Rotation>1 0 -1.187174730650125e-16 0 -0.99001304049175542 0.14097581230931128 -1.1102230246253493e-16 -0.14097581230931128 -0.99001304049175542</Rotation>
+<Translation>0.053311593957287476 0.3249356857318329 0.069300421810488871</Translation>
+</Transform>
+</Instance>
+<Instance name="Gövde-1" uid="Gövde-1" entityUid="Gövde*:*Varsayilan">
+<Transform>
+<Rotation>-1 0 0 0 0.99996096174249971 0.0088360053766120914 0 0.0088360053766120914 -0.99996096174249971</Rotation>
+<Translation>0.053311593957287504 -0.051063777091861717 -0.41717524510704213</Translation>
+</Transform>
+</Instance>
+<Instance name="zemin-1" uid="zemin-1" grounded="true" entityUid="zemin*:*Varsayilan">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.046688406042712433 -0.25106377709186167 -0.41717524510704201</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Es Merkezli1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Gövde-1</Uid>
+</InstancePath>
+<Position>0.050000000000000003 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>zemin-1</Uid>
+</InstancePath>
+<Position>0.10000000000000001 0.20000000000000001 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakisik1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Gövde-1</Uid>
+</InstancePath>
+<Position>0.050000000000000003 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>zemin-1</Uid>
+</InstancePath>
+<Position>0.050000000000000003 0.20000000000000001 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Es Merkezli2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Gövde-1</Uid>
+</InstancePath>
+<Position>0.050000000000000003 0.38028328606823447 -0.48313434247996112</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>kol-1</Uid>
+</InstancePath>
+<Position>-0.050000000000000003 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakisik2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Gövde-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>kol-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Gövde" uid="Gövde*:*Varsayilan" version="123">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="Gövde.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.8815396792222012</Mass>
+<CenterOfMass>0.024999999999999998 0.16921391308992989 -0.2163989464725399</CenterOfMass>
+<Inertia>0.072557921240475429 0.044726362903021892 0.028615533203796117 0.033663859468498203 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Gövde_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="kol" uid="kol*:*Varsayilan" version="265">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="kol.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.96459674577222099</Mass>
+<CenterOfMass>0.019911097687077724 -7.0605626490515938e-05 -0.14579757378781241</CenterOfMass>
+<Inertia>0.017199406172195047 0.017492572269078053 0.00094949159800168095 -1.7537857473232452e-05 0.00071568214893701835 3.46579699172926e-07</Inertia>
+</MassProperties>
+<GeometryFile name="kol_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="zemin" uid="zemin*:*Varsayilan" version="132">
+<ModelUnits mass="kilogram" length="centimeter"/>
+<PartFile name="zemin.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>29.534070751110264</Mass>
+<CenterOfMass>-0.0060804231582235382 0.073028001063516562 0</CenterOfMass>
+<Inertia>0.65524282842487891 1.068670575942394 0.6550255799305813 0 0 0.022801586843338752</Inertia>
+</MassProperties>
+<GeometryFile name="zemin_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
